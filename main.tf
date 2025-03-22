@@ -8,5 +8,5 @@ module "rds" {
   rds_db_username = var.rds_db_username
   rds_db_password = var.rds_db_password
 
-  vpc_id = data.aws_vpc.default_vpc.id
+  vpc_id = var.vpc_id
 }

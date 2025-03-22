@@ -56,4 +56,5 @@ variable "rds_db_password" {
 variable "vpc_id" {
     type        = string
     description = "ID of default VPC"
+    default = null
 }

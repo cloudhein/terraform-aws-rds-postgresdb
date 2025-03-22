@@ -1,11 +1,13 @@
 variable "aws_region" {
   type        = string
   description = "The region of the AWS to provision the resources"
+  default     = null
 }
 
 variable "profile" {
   type        = string
   description = "The profile to use"
+  default     = null
 }
 
 variable "rds_storage_size" {
@@ -64,4 +66,10 @@ variable "rds_db_password" {
     condition     = length(var.rds_db_password) >= 8 && length(var.rds_db_password) < 20
     error_message = "The character length of the RDS database password should be between 8 and 20"
   }
+}
+
+variable "vpc_id" {
+  type        = string
+  description = "default vpc id"
+  default     = null
 }
