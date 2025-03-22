@@ -6,7 +6,7 @@ Terraform Module which creates Postgresdb using AWS managed RDS service
 ```hcl
 module "rds" {
   source             = "cloudhein/rds-postgresdb/aws"
-  version            = "1.4.0"
+  version            = "1.5.0"
   rds_storage_size   = var.rds_storage_size
   rds_storage_type   = var.rds_storage_type
   rds_instance_class = var.rds_instance_class
