@@ -18,4 +18,33 @@ module "rds" {
 }
 ```
 
+## Standard Module Structure
+```
+├── LICENSE
+├── main.tf
+├── modules
+│   └── rds
+│       ├── main.tf
+│       ├── outputs.tf
+│       ├── README.md
+│       ├── variables.tf
+│       └── versions.tf
+├── outputs.tf
+├── README.md
+├── terraform.tfvars
+├── variables.tf
+└── versions.tf
+```
+If you want to publish your module to terraform registry, it must contains following module directory structure:
+1. Root Module
+2. README.md
+3. LICENSE
+4. `main.tf,variables.tf,outputs.tf,versions.tf` file in root module
+5. Variables and outputs should have descriptions
+6. Nested modules should exist under the `modules/` subdirectory
+   ```
+   Any nested module with a README.md is considered usable by an external user. If a README doesn't exist, it is considered for internal use only.
+   ```
+
+Reference Links for Standard Module Structure : [Standard Module Structure](https://developer.hashicorp.com/terraform/language/modules/develop/structure)
 
