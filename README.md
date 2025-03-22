@@ -51,7 +51,7 @@ Reference Links for Standard Module Structure : [Standard Module Structure](http
 
 ## Publishing Modules
 1. Create your Terraform module configuration.
-2. Create a GitHub repository for your module in the following format – terraform-<Provider_Name>-<Module_Name>.
+2. Create a GitHub repository for your module in the following format – `terraform-<Provider_Name>-<Module_Name>`.
 3. Push the content of your module configuration to the created repository.
 4. Create a tag for your repository.
 5. Go to the Terraform registry and sign in with GitHub.
