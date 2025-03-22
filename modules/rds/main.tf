@@ -11,7 +11,7 @@ resource "aws_db_instance" "postgresdb" {
 
   db_name  = var.rds_db_name
   username = var.rds_db_username
-  password_wo = var.rds_db_password
+  password = var.rds_db_password
 
   publicly_accessible = false
   multi_az            = false
